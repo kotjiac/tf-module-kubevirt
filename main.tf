@@ -1,6 +1,7 @@
 provider "kubevirt" {
 }
 provider "kubernetes" {
+  host = https://185.197.195.100:6443
 }
 
 resource "kubevirt_virtual_machine" "virtual_machine" {
