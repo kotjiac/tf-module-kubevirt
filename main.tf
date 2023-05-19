@@ -8,7 +8,6 @@ terraform {
 }
 
 provider "kubevirt" {
-  host = https://185.197.195.100:6443
 }
 provider "kubernetes" {
 }
