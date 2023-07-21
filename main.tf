@@ -11,6 +11,7 @@ provider "kubevirt" {
 }
 
 provider "kubernetes" {
+  host = "https://kubernetes.default.svc"
 }
 
 resource "kubevirt_virtual_machine" "virtual_machine" {
