@@ -11,8 +11,7 @@ provider "kubevirt" {
 }
 
 provider "kubernetes" {
-  KUBERNETES_SERVICE_HOST= "kubernetes.default.svc"
-  KUBERNETES_SERVICE_PORT= "443"
+  host = "https://kubernetes.default.svc"
 }
 
 resource "kubevirt_virtual_machine" "virtual_machine" {
